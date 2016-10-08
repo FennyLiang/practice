@@ -1,0 +1,74 @@
+body{
+    background:#150729;
+}
+
+.boxes{
+    position : relative;
+    display: block;
+    margin-top: 20%;
+}
+
+.boxes:before{
+    content:'';
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    width: 70px;
+    height: 70px;
+    background: #9fd9d8;
+    boder-radius: 2px;
+    transform: rotate(45deg);
+    animation: boxes .7s ease-in-out infinite ;
+}
+
+@keyframes boxes {
+    0%{
+        top:50px;
+        transform: rotate(90deg);
+    }
+    20%{
+        border-radius:7px;  /*時間到 20% 的地方圓角變形5px*/
+    }
+    50%{
+        top:80px;
+        border-bottom-right-radius:35px;
+        transform: rotate(45deg);
+    }
+    80%{
+        border-radius:7px;  /*時間到 80% 的地方圓角恢復5px*/
+    }
+    100%{
+        top:50px;
+        transform: rotate(0deg);
+    }
+}
+
+
+.shadow{
+    content:'';
+    position: absolute;
+    z-index:1;
+    margin-top: 159px;
+    left: 46%;
+    width: 44px;
+    height: 4px;
+    background: #f5c30c;
+    border-radius: 100%;
+    animation: shadow .7s ease-in-out infinite ;
+}
+
+@keyframes shadow {
+    0%,100%{
+        left:46%;
+        width:44px;
+        background: #f5c30c;
+    }
+
+    50%{
+        margin-top: 153px;
+        left:46%;
+        width:50px;
+        height: 7px;
+        background: #f93971;
+    }
+}
