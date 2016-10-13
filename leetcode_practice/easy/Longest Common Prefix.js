@@ -33,3 +33,7 @@ var longestCommonPrefix = function(strs) {
   return firstString;
 
 };
+
+var strs = ['abcd', 'abccc', 'abcdec'];
+var result = longestCommonPrefix(strs);
+console.log(`The same string is ::::: ${result}`);
