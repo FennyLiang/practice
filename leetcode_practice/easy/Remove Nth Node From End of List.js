@@ -49,7 +49,7 @@ var removeNthFromEnd = function(head, n) {
 
 
 var head = [1, 2, 3, 4, 5];
-var n = 0;
+var n = 2;
 var resultArray = removeNthFromEnd(head, n);
 
 console.log(`${resultArray}`);
