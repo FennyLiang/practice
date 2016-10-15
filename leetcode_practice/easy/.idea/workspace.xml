@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Remove Nth Node From End of List.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Remove Nth Node From End of List.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Remove Nth Node From End of List.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -41,6 +41,26 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Remove Duplicates from Sorted Array.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Remove Duplicates from Sorted Array.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Remove Element.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Remove Element.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,6 +75,7 @@
         <option value="$PROJECT_DIR$/Longest Common Prefix.js" />
         <option value="$PROJECT_DIR$/Remove Nth Node From End of List.js" />
         <option value="$PROJECT_DIR$/Remove Duplicates from Sorted Array.js" />
+        <option value="$PROJECT_DIR$/Remove Element.js" />
       </list>
     </option>
   </component>
@@ -185,16 +206,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476321272632</updated>
-      <workItem from="1476321276439" duration="4467000" />
+      <workItem from="1476321276439" duration="5989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4467000" />
+    <option name="totallyTimeSpent" value="5989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -254,14 +275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Remove Duplicates from Sorted Array.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Remove Nth Node From End of List.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -269,6 +282,22 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Remove Duplicates from Sorted Array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Remove Element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

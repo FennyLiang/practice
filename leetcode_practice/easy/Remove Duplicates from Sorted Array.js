@@ -32,7 +32,9 @@ var removeDuplicates = function(nums) {
 
   for(var i = 1; i < nums.length; i++){
     if(nums[countNumber] != nums[i]){
-      nums[++countNumber] = nums[i]; // ++表示先加後再放入參數值
+      countNumber += 1;
+
+      nums[countNumber] = nums[i]; // ++表示先加後再放入參數值; 也可以直接寫成nums[++countNumber] = nums[i]
     }
   }
 
