@@ -32,11 +32,11 @@ var removeDuplicates = function(nums) {
 
   for(var i = 1; i < nums.length; i++){
     if(nums[countNumber] != nums[i]){
-      nums[++countNumber] = nums[i];
+      nums[++countNumber] = nums[i]; // ++表示先加後再放入參數值
     }
   }
 
-  const result = countNumber + 1;
+  const result = countNumber + 1; //因為要回傳陣列長度所以要+1
 
   return result;
 };
