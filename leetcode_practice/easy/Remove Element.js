@@ -1,6 +1,6 @@
 var removeElement = function(nums, val) {
   if(nums.length == 0) {return nums.length};
-  if(nums.indexOf(val) < 0) {return nums.length};  //array.indexOf(item,start[optioal])  會印出指定元素在陣列中的位址
+  if(nums.indexOf(val) < 0) {return nums.length};  //array.indexOf(item,start[optioal])  會印出指定元素(val)在陣列中的位址
 
   var count = 0;
 
