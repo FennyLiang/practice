@@ -1,12 +1,27 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const MongoClient = require('mongodb').MongoClient;
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}))
+var db;
 
-app.listen(8080, () => {
-  console.log('server is connecting');
-})
+//能夠將前端form表單的資料加入body變成json格式回傳回來
+app.use(bodyParser.urlencoded({extended: true}));
+
+//建立db連結
+MongoClient.connect('mongodb://<fenny>:<db1234>@ds059516.mlab.com:59516/anyone-quotes', (err, database) => {
+
+  if(err) return console.log(err);
+
+  db = database;//當我們從browser那邊處理requests時，允許使用資料庫
+
+  app.listen(8080, () => {
+    console.log('server is connecting');
+  })
+
+});
+
+
 
 app.get('/', (req, res) => {
   // res.send('This is get method.');
