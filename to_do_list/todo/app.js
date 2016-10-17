@@ -9,7 +9,7 @@ var db;
 app.use(bodyParser.urlencoded({extended: true}));
 
 //建立db連結
-MongoClient.connect('mongodb://<fenny>:<db1234>@ds059516.mlab.com:59516/anyone-quotes', (err, database) => {
+MongoClient.connect('mongodb://fenny:1234@ds059516.mlab.com:59516/anyone-quotes', (err, database) => {
 
   if(err) return console.log(err);
 
@@ -29,5 +29,14 @@ app.get('/', (req, res) => {
 })
 
 app.post('/quotes', (req, res) => {
-  console.log(req.body);
+
+  db.collection('quotes').save(req.body, (err, result) => {
+
+    if(err) return console.log(err);
+
+    console.log('db saved!');
+    res.redirect('/') //要記得轉回去原本的頁面
+
+  })
+
 })
