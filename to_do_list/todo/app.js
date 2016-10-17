@@ -8,6 +8,10 @@ var db;
 //能夠將前端form表單的資料加入body變成json格式回傳回來
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.set('view engine', 'ejs');
+
+
+
 //建立db連結
 MongoClient.connect('mongodb://fenny:1234@ds059516.mlab.com:59516/anyone-quotes', (err, database) => {
 
@@ -24,9 +28,20 @@ MongoClient.connect('mongodb://fenny:1234@ds059516.mlab.com:59516/anyone-quotes'
 
 
 app.get('/', (req, res) => {
-  // res.send('This is get method.');
-  res.sendFile( __dirname + '/index.html'); // __dirname 指向當前的資料夾位置
-})
+
+  //var cursor = db.collection('quotes').find() 會輸出有資料庫結構的資料
+
+  db.collection('quotes').find().toArray( (err, result) => { //add to array 是為了不讓所有不相關的資料一起輸出
+    if(err)
+    console.log(err);
+
+    res.render('index.ejs', {quotes: result}) //quotes 對應到ejs 的 class, results為資料庫輸出的資料
+
+  });
+
+  // res.sendFile( __dirname + '/index.html'); // __dirname 指向當前的資料夾位置
+
+});
 
 app.post('/quotes', (req, res) => {
 
@@ -35,8 +50,8 @@ app.post('/quotes', (req, res) => {
     if(err) return console.log(err);
 
     console.log('db saved!');
-    res.redirect('/') //要記得轉回去原本的頁面
+
+    res.redirect('/'); //要記得轉回去原本的頁面
 
   })
-
 })
