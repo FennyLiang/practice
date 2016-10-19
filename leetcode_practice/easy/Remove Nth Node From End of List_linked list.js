@@ -86,7 +86,7 @@ var head = {
 
 function ListNode(val) {
      this.val = val;
-     this.next = {};
+     this.next = null;
  }
 
 var n = 2;
