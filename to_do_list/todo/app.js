@@ -31,15 +31,15 @@ app.get('/', (req, res) => {
 
   //var cursor = db.collection('quotes').find() 會輸出有資料庫結構的資料
 
-  db.collection('quotes').find().toArray( (err, result) => { //add to array 是為了不讓所有不相關的資料一起輸出
+  db.collection('quotes').find().toArray( (err, result) => {    //add to array 是為了不讓所有不相關的資料一起輸出
     if(err)
     console.log(err);
 
-    res.render('index.ejs', {quotes: result}) //quotes 對應到ejs 的 class, results為資料庫輸出的資料
+    res.render('index.ejs', {quotes: result}); //quotes 對應到ejs 的 class, results為資料庫輸出的資料
 
   });
 
-  // res.sendFile( __dirname + '/index.html'); // __dirname 指向當前的資料夾位置
+  // res.sendFile( __dirname + '/index.html'); // __dirname 指向當前的資料夾位置,會把index.html帶到指定位置localhost:8080
 
 });
 
