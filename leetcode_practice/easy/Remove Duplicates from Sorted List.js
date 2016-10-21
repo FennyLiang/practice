@@ -14,6 +14,8 @@ var util = require('util');
 var deleteDuplicates = function(head) {
   if(head === null || head.next ===null) return head;
 
+  var head = new ListNode(0);
+
   var current = head; // current為輔助指標，先指向head所指向的節點
   while(current.next !== null){
     // 如果目前Node的值與下一個相同，跳過下一個
