@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
     if(err)
     console.log(err);
 
-    res.render('index.ejs', {quotes: result}); //quotes 對應到ejs 的 class, results為資料庫輸出的資料
+    res.render('index.ejs', {quotes: result}); //quotes 對應到ejs 要顯示資料的位置名稱, results為資料庫輸出的資料
 
   });
 
