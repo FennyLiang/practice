@@ -15,8 +15,8 @@ const slackbot = require('slackbots')
 //settings
 var bot = new slackbot({
 
-  token : 'xoxb-112679086532-C2afKgGqaosQSTiEPIGHUNSD',
-  name : 'shraslovetalker'
+  token : '',
+  name : ''
 
 })
 
